@@ -62,7 +62,8 @@ export const resumeData = {
   projects: [
     {
       name: "RAQTKOSH (Next.js Full-Stack)",
-      description: "Developed AI blood matching to link donors/recipients by compatibility, availability, urgency, boosting match efficiency."
+      description: "Developed AI blood matching to link donors/recipients by compatibility, availability, urgency, boosting match efficiency.",
+      url: "https://github.com/raqtkosh/raqtkosh"
     },
     {
       name: "Airport Security System",

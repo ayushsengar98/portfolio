@@ -15,7 +15,7 @@ function BackgroundGeometries() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     if (group.current) {
       group.current.rotation.y += delta * 0.1;
       group.current.position.y = THREE.MathUtils.lerp(group.current.position.y, scrollY * -0.005, 0.1);
@@ -191,7 +191,7 @@ function App() {
             Skills & Expertise
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {Object.entries(resumeData.skills).map(([category, skills], i) => (
+            {Object.entries(resumeData.skills).map(([category, skills]) => (
               <div key={category} className="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
                 <h3 className="text-sm font-black text-emerald-400 uppercase tracking-widest mb-6">{category}</h3>
                 <div className="flex flex-wrap gap-3">
@@ -227,7 +227,12 @@ function App() {
                 className="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-violet-500/50 transition-all shadow-xl group"
               >
                 <h4 className="text-2xl font-bold text-white group-hover:text-violet-400 transition-colors mb-4">{proj.name}</h4>
-                <p className="text-slate-300 leading-relaxed">{proj.description}</p>
+                <p className="text-slate-300 leading-relaxed mb-6">{proj.description}</p>
+                {proj.url && (
+                  <a href={proj.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-violet-400 hover:text-violet-300 font-bold transition-colors">
+                    View on GitHub <span className="text-xl">↗</span>
+                  </a>
+                )}
               </motion.div>
             ))}
           </div>
