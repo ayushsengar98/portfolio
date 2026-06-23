@@ -114,7 +114,7 @@ function App() {
              <a href="https://www.linkedin.com/in/ayush-sengar-936515194/" target="_blank" rel="noreferrer" className="px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full backdrop-blur-sm transition-all font-semibold flex items-center gap-2 text-white">
                💼 LinkedIn
              </a>
-             <a href="/resume.pdf" download className="px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full backdrop-blur-sm transition-all font-semibold flex items-center gap-2 text-white">
+             <a href={`${import.meta.env.BASE_URL}resume.pdf`} download="Ayush_Sengar_Resume.pdf" className="px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full backdrop-blur-sm transition-all font-semibold flex items-center gap-2 text-white">
                📄 Download PDF
              </a>
              <span className="px-6 py-3 bg-white/5 border border-white/10 rounded-full backdrop-blur-sm font-semibold text-slate-300">📞 {resumeData.contact.phone}</span>
