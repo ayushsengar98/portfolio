@@ -48,7 +48,7 @@ export const resumeData = {
   ],
   skills: {
     backend: ["Java", "SQL (MySQL, PostgreSQL)", "REST APIs", "Spring Boot", "Spring MVC"],
-    cloud_and_tools: ["AWS S3", "Flyway DB", "API Integrations"],
+    "Cloud and Tools": ["AWS S3", "Flyway DB", "API Integrations"],
     frontend: ["React", "Next.js", "Tailwind CSS"],
     ai: ["AI-Assisted Development", "AI-Driven Debugging", "Internal Developer Tools"]
   },
