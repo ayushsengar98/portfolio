@@ -54,12 +54,18 @@ export const resumeData = {
     }
   ],
   skills: {
-    backend: ["Java", "SQL (MySQL)", "REST APIs", "Spring Boot", "Spring MVC", "Hibernate"],
+    backend: ["Java", "SQL (MySQL, PostgreSQL)", "REST APIs", "Spring Boot", "Spring MVC", "Hibernate"],
     testing: ["JUnit", "TestNG", "Selenium", "Appium", "Postman"],
-    frontend: ["React", "Next.js"],
+    frontend: ["React", "Next.js", "Tailwind CSS"],
+    cloud_and_tools: ["AWS S3", "Flyway DB", "API Integrations (Razorpay, Shiprocket)"],
     ai: ["AI-Assisted Development", "Intelligent Automation", "AI-Powered Internal Tools"]
   },
   projects: [
+    {
+      name: "Usha Medicals (Full-Stack E-Commerce)",
+      description: "Developed a comprehensive healthcare e-commerce platform using React/Next.js, Java Spring Boot, and PostgreSQL. Engineered complex features including Razorpay integration with asynchronous webhooks for secure payments and refunds, Shiprocket for automated logistics tracking, and AWS S3 for scalable media storage.",
+      url: "https://www.arthritismedicine.in/"
+    },
     {
       name: "RAQTKOSH (Next.js Full-Stack)",
       description: "Developed AI blood matching to link donors/recipients by compatibility, availability, urgency, boosting match efficiency.",
