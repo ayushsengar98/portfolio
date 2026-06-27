@@ -230,7 +230,7 @@ function App() {
                 <p className="text-slate-300 leading-relaxed mb-6">{proj.description}</p>
                 {proj.url && (
                   <a href={proj.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-violet-400 hover:text-violet-300 font-bold transition-colors">
-                    View on GitHub <span className="text-xl">↗</span>
+                    {proj.url.includes('github.com') ? 'View on GitHub' : 'Live Site'} <span className="text-xl">↗</span>
                   </a>
                 )}
               </motion.div>
